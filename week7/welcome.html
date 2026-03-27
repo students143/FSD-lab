@@ -1,0 +1,14 @@
+<h2>Welcome to CMRIT</h2>
+
+<p id="user"></p>
+<p id="profession"></p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    document.getElementById("user").innerText =
+        "Username: " + params.get("username");
+
+    document.getElementById("profession").innerText =
+        "Profession: " + params.get("profession");
+</script>

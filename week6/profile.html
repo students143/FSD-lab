@@ -1,0 +1,19 @@
+<h2>Welcome to CMRIT</h2>
+
+<p id="user"></p>
+<p id="profession"></p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("token");
+
+    fetch("/profile-data?token=" + token)
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("user").innerText =
+                "Username: " + data.username;
+
+            document.getElementById("profession").innerText =
+                "Profession: " + data.profession;
+        });
+</script> 
