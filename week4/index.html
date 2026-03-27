@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slider</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        img {
+            width: 400px;
+            height: 250px;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Image Slider</h2>
+
+<img id="slider" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800">
+
+<br>
+
+<button id="prev">Prev</button>
+<button id="next">Next</button>
+
+<script>
+var images = [
+  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+  "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+  "https://images.unsplash.com/photo-1493558103817-58b2924bce98"
+];
+
+    var i = 0;
+
+    $("#next").click(function () {
+        i = (i + 1) % images.length;
+        $("#slider").attr("src", images[i]);
+    });
+
+    $("#prev").click(function () {
+        i = (i - 1 + images.length) % images.length;
+        $("#slider").attr("src", images[i]);
+    });
+</script>
+
+</body>
+</html>
