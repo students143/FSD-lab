@@ -1,0 +1,10 @@
+pip install django djangorestframework
+
+django-admin startproject restapi
+cd restapi
+python manage.py startapp app
+
+python manage.py runserver
+
+python manage.py makemigrations
+python manage.py migrate

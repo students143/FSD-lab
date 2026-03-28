@@ -1,0 +1,18 @@
+same as week 8 but with some changes:
+profile.ts, profile.html, server.js
+
+In terminal:
+npm init -y
+npm install express cors
+node server.js
+ng serve
+
+create components :
+ng generate component home
+ng generate component about
+ng generate component profile
+
+Run the Application:
+ng serve
+Open browser:
+http://localhost:4200

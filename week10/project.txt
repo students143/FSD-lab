@@ -1,0 +1,12 @@
+npx create-react-app spa
+cd spa
+npm install react-router-dom
+npm start
+
+pages/
+  Home.js
+  Profile.js
+  Contact.js
+
+  run:
+  npm start

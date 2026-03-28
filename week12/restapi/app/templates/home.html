@@ -1,0 +1,12 @@
+<h2>Enter Details</h2>
+
+<form method="POST" action="/profile/">
+    {% csrf_token %}
+    
+    Name: <input type="text" name="name"><br><br>
+    Email: <input type="text" name="email"><br><br>
+    City: <input type="text" name="city"><br><br>
+    Profession: <input type="text" name="profession"><br><br>
+
+    <button type="submit">Submit</button>
+</form>

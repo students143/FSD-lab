@@ -1,0 +1,15 @@
+In terminal:
+npm install -g @angular/cli
+ng new spa-demo
+cd spa-demo
+ng serve -o
+
+create components :
+ng generate component home
+ng generate component about
+ng generate component profile
+
+Run the Application:
+ng serve
+Open browser:
+http://localhost:4200
